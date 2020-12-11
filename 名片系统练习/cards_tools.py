@@ -61,5 +61,18 @@ def card_show():
 def card_search():
     print("搜索名片")
 
+    card_name = input("请输入想要搜索的姓名：")
+    for name in ['姓名', '电话', 'QQ', 'Email']:
+        print("%s\t\t" % name, end='')
+    print('')
+
+    for card in card_list:
+        if card_name == card['Name']:
+            print("%s\t\t%s\t\t%s\t\t%s" % (card['Name'],
+                                            card['Phone'],
+                                            card['QQ'],
+                                            card['Email']), end='')
+            print("")
+
 
 
