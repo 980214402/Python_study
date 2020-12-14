@@ -1,0 +1,67 @@
+Python txt文件读取写入字典的方法（json、eval）
+一、使用json转换方法
+1、字典写入txt
+
+import json
+
+dic = {
+'andy':{
+'age': 23,
+'city': 'beijing',
+'skill': 'python'
+},
+'william': {
+'age': 25,
+'city': 'shanghai',
+'skill': 'js'
+}
+}
+
+js = json.dumps(dic)
+file = open('test.txt', 'w')
+file.write(js)
+file.close()
+
+
+2、读取txt中的字典
+
+import json
+
+file = open('test.txt', 'r')
+js = file.read()
+dic = json.loads(js)
+print(dic)
+file.close()
+
+ 
+
+
+二、使用str转换方法
+1、字典写入txt
+
+dic = {
+'andy':{
+'age': 23,
+'city': 'beijing',
+'skill': 'python'
+},
+'william': {
+'age': 25,
+'city': 'shanghai',
+'skill': 'js'
+}
+}
+
+fw = open("test.txt",'w+')
+fw.write(str(dic)) #把字典转化为str
+fw.close()
+
+ 
+
+
+2、读取txt中字典
+
+fr = open("test.txt",'r+')
+dic = eval(fr.read()) #读取的str转换为字典
+print(dic)
+fr.close()
