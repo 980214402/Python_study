@@ -1,0 +1,30 @@
+https://www.jianshu.com/p/1a70bcb0bcd9
+
+Python 项目如何打包发布成 exe 文件
+
+崐崐
+0.406
+2019.07.01 11:36:27
+字数 326
+阅读 598
+Python是一种脚本语言，也就是解释型的语言，需要解释器来进行解释以后才可以执行，而Python源代码需要在Python虚拟机上面运行，但是我们做好的程序，不可能给用户使用的时候还让他安装一个Python环境，所以今天我们讲解如何将Python程序打包为exe可执行文件。
+
+1. 首先需要安装 pyinsatller
+pip install pyinstaller
+打开命令行窗口，输入如上指令
+然后 pyinstaller 自动安装
+
+2. 使用pyinstaller打包Python程序
+pyinstaller -F -w (-i icofile) filename
+说明：
+filename表示你的Python程序文件名
+-w 表示隐藏程序运行时的命令行窗口（不加-w会有黑色窗口）
+括号内的为可选参数，-i icofile表示给程序加上图标，图标必须为.ico格式
+icofile表示图标的位置，建议直接放在程序文件夹里面，这样子打包的时候直接写文件名就好
+
+3. 示例：
+pyinstaller -F -w -i 'test.ico'  AppStart.py
+在项目当前目录里执行上面的打包命令，成功打包后进入到目录里面会看到一个名称为dist目录，打包好的exe程序就在里面
+
+注：运行环境为 win7 - Python3.7.3 64-bit
+
