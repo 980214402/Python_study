@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cdd57c7-539b-41ca-ab3d-542a24a3bcb3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/参考资料/文件中读写字典.txt" beforeDir="false" afterPath="$PROJECT_DIR$/参考资料/文件中读写字典.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../card_excel/card_excel/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../card_excel/card_excel/card_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../informal/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../informal/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../informal/informal_1/studay_exccel_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/../informal/informal_1/studay_exccel_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../informal/informal_1/test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../informal/informal_1/test.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/名片系统练习2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/.idea/card_file.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/cards_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/cards_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/参考资料/文件中读写字典.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/参考资料/文件中读写字典.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/文件操作.py" beforeDir="false" afterPath="$PROJECT_DIR$/../card_file/文件操作.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,16 +29,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cards_main.py">
+        <entry file="file://$PROJECT_DIR$/../card_file/cards_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state>
+              <caret selection-end-line="16" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1.txt">
+        <entry file="file://$PROJECT_DIR$/../card_file/1.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="4" selection-start-line="4" selection-end-line="4" />
@@ -32,9 +47,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cards_tools.py">
+        <entry file="file://$PROJECT_DIR$/../card_file/cards_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5280">
+            <state relative-caret-position="2372">
               <caret line="187" selection-start-line="187" selection-end-line="188" selection-end-column="23" />
               <folding>
                 <element signature="e#69#250#0" />
@@ -60,20 +75,8 @@
       <list>
         <option value="$PROJECT_DIR$/文件操作.py" />
         <option value="$PROJECT_DIR$/1.txt" />
-        <option value="$PROJECT_DIR$/cards_main.py" />
         <option value="$PROJECT_DIR$/cards_tools.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/名片系统练习2.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/cards_main.py" />
       </list>
     </option>
   </component>
@@ -89,12 +92,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="card_file" type="b2602c69:ProjectViewProjectNode" />
+              <item name="card_file" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -111,7 +125,7 @@
   </component>
   <component name="RunManager" selected="Python.cards_main (1)">
     <configuration name="文件操作" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="名片系统练习2" />
+      <module name="card_file" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -131,8 +145,29 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="card_file" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cards_main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="名片系统练习2" />
+      <module name="card_file" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -153,7 +188,7 @@
       <method v="2" />
     </configuration>
     <configuration name="cards_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="名片系统练习2" />
+      <module name="card_file" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -171,6 +206,49 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="card_file" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="card_file" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <module name="card_file" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -226,34 +304,34 @@
     </entry>
     <entry file="file://D:/Python_黑马/04_函数/hm_06_函数的返回值.py" />
     <entry file="file://D:/Python_黑马/04_函数/hm_05_函数的参数.py" />
-    <entry file="file://$PROJECT_DIR$/文件操作.py">
+    <entry file="file://$PROJECT_DIR$/../card_file/文件操作.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cards_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1.txt">
+    <entry file="file://$PROJECT_DIR$/../card_file/1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cards_tools.py">
+    <entry file="file://$PROJECT_DIR$/../card_file/cards_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5280">
+        <state relative-caret-position="2372">
           <caret line="187" selection-start-line="187" selection-end-line="188" selection-end-column="23" />
           <folding>
             <element signature="e#69#250#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../card_file/cards_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="16" selection-end-column="3" />
         </state>
       </provider>
     </entry>
