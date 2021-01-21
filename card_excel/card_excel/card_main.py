@@ -15,3 +15,18 @@
    card_input_info(): 处理输入的名片信息
 
 """
+
+
+while True:
+
+    user_use = input("请选择需要的操作：")
+
+    if  user_use in ['1', '2', '3']:
+        print("你选择的操作 {}".format(user_use))
+    elif user_use == '0':
+        print("你选择的操作是 {}".format(user_use))
+        print('欢迎再次使用 本程序')
+        break
+    else:
+        print('输入错误，请重新选择操作')
+
