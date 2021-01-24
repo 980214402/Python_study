@@ -16,17 +16,27 @@
 
 """
 
+import card_tools
+
 
 while True:
+
+    card_tools.card_menu()
 
     user_use = input("请选择需要的操作：")
 
     if  user_use in ['1', '2', '3']:
         print("你选择的操作 {}".format(user_use))
+        if  user_use == '1':
+            card_tools.card_add('card_file.xlsx', 'Sheet1')
+        elif user_use == '2':
+            card_tools.card_show('card_file.xlsx', 'Sheet1')
+            pass
+        elif user_use == '3':
+            pass
     elif user_use == '0':
         print("你选择的操作是 {}".format(user_use))
-        print('欢迎再次使用 本程序')
+        print('欢迎再次使用 【名片管理系统 Excel】')
         break
     else:
         print('输入错误，请重新选择操作')
-
