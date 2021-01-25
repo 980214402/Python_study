@@ -41,11 +41,11 @@ def card_show(filename, sheet):
     else:
         print('编号\t\t姓名\t\t电话\t\tQQ\t\t邮箱')
         for card_dict in card_list:
-            print('{}\t\t{}\t\t{}\t\t{}\t\t{}'.format(card_dict['id']),
+            print('{}\t\t{}\t\t{}\t\t{}\t\t{}'.format(card_dict['id'],
                                                     card_dict['name'],
                                                     card_dict['phone'],
                                                     card_dict['QQ'],
-                                                    card_dict['Email'])
+                                                    card_dict['Email']))
 
 
 def card_search():
@@ -53,10 +53,11 @@ def card_search():
 
 
 def card_excel_open(filename, sheet):
+    card_list = []
     wb = openpyxl.load_workbook(filename)  # 加载excel文件
     sheet = wb[sheet]   # 找到表单
     max_row = sheet.max_row  # 获取最大行数
-    for i in range(1, max_row):
+    for i in range(2, max_row+1):
         cell = sheet.cell(row=i, column=1).value  # 接收单元格的字典内容
         cell = eval(cell)
         card_list.append(cell)
@@ -66,6 +67,6 @@ def card_excel_write(filename, sheet, row, column, write):
     wb = openpyxl.load_workbook(filename)
     sheet = wb[sheet]
     # max_row = sheet.max_row
-    sheet.cell(row, column).value = write  # 找到特定单元格，进行写入
+    sheet.cell(row+1, column).value = write  # 找到特定单元格，进行写入
     wb.save(filename)   # 保存excel
 
