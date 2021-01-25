@@ -22,6 +22,7 @@ import card_tools
 while True:
 
     card_tools.card_menu()
+    card_tools.card_excel_open('card_file.xlsx', 'Sheet1')
 
     user_use = input("请选择需要的操作：")
 
@@ -33,7 +34,7 @@ while True:
             card_tools.card_show('card_file.xlsx', 'Sheet1')
             pass
         elif user_use == '3':
-            pass
+            card_tools.card_search()
     elif user_use == '0':
         print("你选择的操作是 {}".format(user_use))
         print('欢迎再次使用 【名片管理系统 Excel】')
