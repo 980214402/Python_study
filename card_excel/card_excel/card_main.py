@@ -15,29 +15,34 @@
    card_input_info(): 处理输入的名片信息
 
 """
-
 import card_tools
 
 
-while True:
+def card(filename, sheet):
 
-    card_tools.card_menu()
-    card_tools.card_excel_open('card_file.xlsx', 'Sheet1')
+    card_tools.card_excel_open(filename, sheet)
+    while True:
 
-    user_use = input("请选择需要的操作：")
+        card_tools.card_menu()
 
-    if  user_use in ['1', '2', '3']:
-        print("你选择的操作 {}".format(user_use))
-        if  user_use == '1':
-            card_tools.card_add('card_file.xlsx', 'Sheet1')
-        elif user_use == '2':
-            card_tools.card_show('card_file.xlsx', 'Sheet1')
-            pass
-        elif user_use == '3':
-            card_tools.card_search()
-    elif user_use == '0':
-        print("你选择的操作是 {}".format(user_use))
-        print('欢迎再次使用 【名片管理系统 Excel】')
-        break
-    else:
-        print('输入错误，请重新选择操作')
+        user_use = input("请选择需要的操作：")
+
+        if user_use in ['1', '2', '3']:
+            print("你选择的操作 {}".format(user_use))
+            if user_use == '1':
+                card_tools.card_add(filename, sheet)
+            elif user_use == '2':
+                card_tools.card_show(filename, sheet)
+                pass
+            elif user_use == '3':
+                card_tools.card_search(filename, sheet)
+        elif user_use == '0':
+            print("你选择的操作是 {}".format(user_use))
+            print('欢迎再次使用 【名片管理系统 Excel】')
+            break
+        else:
+            print('输入错误，请重新选择操作')
+
+
+# 调用名片
+card('card_file.xlsx', 'Sheet1')

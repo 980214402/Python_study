@@ -18,7 +18,6 @@ def card_menu():
     print('*' * 30)
 
 
-
 def card_add(filename, sheet):
     """
     增加名片
@@ -27,23 +26,21 @@ def card_add(filename, sheet):
     :return:
     """
     max_row = card_excel_open(filename, sheet)
+    card_excel_delete(filename, sheet, 1, max_row)
     print("请按提示输入内容：")
-    card_id = max_row
+    # card_id = max_row
     card_name = input('请输入姓名: ')
     card_phone = input('请输入电话号码: ')
     card_QQ = input('请输入QQ: ')
     card_Email = input('请输入邮箱: ')
-    card_user_info = {'id': card_id,
-                          'name': card_name,
-                          'phone': card_phone,
-                          'QQ': card_QQ,
-                          'Email': card_Email}
+    card_user_info = {'name': card_name,
+                      'phone': card_phone,
+                      'QQ': card_QQ,
+                      'Email': card_Email}
     card_list.append(card_user_info)
-    card_user_info = str(card_user_info)
-    card_excel_write(filename, sheet, max_row, 1, card_user_info)
     print(card_user_info)
     print('添加 ', card_name, ' 名片成功')
-
+    write_repeat(filename, sheet, card_list)
 
 
 def card_show(filename, sheet):
@@ -58,18 +55,16 @@ def card_show(filename, sheet):
         print("没有存储名片 请使用新增功能")
         return
 
-    print('编号\t\t姓名\t\t电话\t\tQQ\t\t邮箱')
+    print('姓名\t\t电话\t\tQQ\t\t邮箱')
     print('=' * 30)
     for card_dict in card_list:
-        print('{}\t\t{}\t\t{}\t\t{}\t\t{}'.format(card_dict['id'],
-                                                card_dict['name'],
-                                                card_dict['phone'],
-                                                card_dict['QQ'],
-                                                card_dict['Email']))
+        print('{}\t\t{}\t\t{}\t\t{}'.format(card_dict['name'],
+                                            card_dict['phone'],
+                                            card_dict['QQ'],
+                                            card_dict['Email']))
 
 
-
-def card_search():
+def card_search(filename, sheet):
 
     # 用户输入
     print('搜索名片')
@@ -78,19 +73,22 @@ def card_search():
 
     for card_find in card_list:
         if card_name == card_find['name']:
-            print('编号\t\t姓名\t\t电话\t\tQQ\t\t邮箱')
+            print('姓名\t\t电话\t\tQQ\t\t邮箱')
             print('=' * 30)
-            print('{}\t\t{}\t\t{}\t\t{}\t\t{}'.format(card_find['id'],
-                                                      card_find['name'],
+            print('{}\t\t{}\t\t{}\t\t{}'.format(card_find['name'],
                                                       card_find['phone'],
                                                       card_find['QQ'],
                                                       card_find['Email']))
 
             # 出来查询到的名片
             card_deal_find(card_find)
+            print(card_list)
             break
     else:
         print('没有找到名片您想找的名片')
+
+    print(card_list, ' card_search')
+    write_repeat(filename, sheet, card_list)
 
 
 def card_deal_find(card_find):
@@ -104,8 +102,8 @@ def card_deal_find(card_find):
 
     elif card_use == '2':
         card_list.remove(card_find)
-        card_excel_delete('card_file.xlsx', 'Sheet1', card_find['id'] + 1)
         print('已删除 %s 的名片' % card_find['name'])
+        print(card_list)
 
 
 def card_input_info(find_value, info):
@@ -126,10 +124,14 @@ def card_excel_open(filename, sheet):
     wb = openpyxl.load_workbook(filename)  # 加载excel文件
     sheet = wb[sheet]   # 找到表单
     max_row = sheet.max_row  # 获取最大行数
-    for i in range(2, max_row+1):
+    for i in range(1, max_row+1):
         cell = sheet.cell(row=i, column=1).value  # 接收单元格的字典内容
-        cell = eval(cell)
-        card_list.append(cell)
+        if not cell is None:
+            # print(cell)
+            # print(type(cell))
+            cell = eval(cell)
+            card_list.append(cell)
+
     return max_row
 
 
@@ -137,17 +139,28 @@ def card_excel_write(filename, sheet, row, column, write):
     wb = openpyxl.load_workbook(filename)
     sheet = wb[sheet]
     # max_row = sheet.max_row
-    sheet.cell(row+1, column).value = write  # 找到特定单元格，进行写入
+    sheet.cell(row, column).value = write  # 找到特定单元格，进行写入
     wb.save(filename)   # 保存excel
 
 
-def card_excel_delete(filename, sheet, row):
+def card_excel_delete(filename, sheet, row_start, row_num):
     wb = openpyxl.load_workbook(filename)
     sheet = wb[sheet]
     # max_row = sheet.max_row
-    sheet.delete_rows(row)  # 删除行内容
+    sheet.delete_rows(row_start, row_num)  # 删除行内容
     wb.save(filename)
 
 
+def write_repeat(filename, sheet, card_list):
+    i = 1
+
+    print(card_list, ' wrwrite_repeat')
+    if len(card_list) != 0:
+        for card_dict in card_list:
+            card_dict = str(card_dict)
+            card_excel_write(filename, sheet, i, 1, card_dict)
+            i += 1
+
 # 测试
-# card_excel_delete('card_file.xlsx', 'Sheet1', 4)
+# card_excel_delete('card_file.xlsx', 'Sheet1', 1, 1)
+# write_repeat('card_file.xlsx', 'Sheet1', [{'name': '2', 'phone': '2', 'QQ': '2', 'Email': '2'}])
