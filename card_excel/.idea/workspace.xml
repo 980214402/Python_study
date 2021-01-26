@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7fc45f0-d041-4023-89b2-f01ee8968bb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card_excel/card_file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/card_excel/card_file.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card_excel/card_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/card_excel/card_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/card_excel/card_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/card_excel/card_tools.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +15,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/card_excel/card_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            <state relative-caret-position="598">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -28,12 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/card_excel/card_tools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
-              <folding>
-                <element signature="e#67#249#0" />
-                <element signature="e#1519#1830#0" />
-              </folding>
+            <state relative-caret-position="222">
+              <caret line="131" column="30" lean-forward="true" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -41,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/Python/Python38/Lib/site-packages/openpyxl/worksheet/worksheet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="15502">
               <caret line="723" column="8" selection-start-line="723" selection-start-column="8" selection-end-line="723" selection-end-column="8" />
             </state>
           </provider>
@@ -80,7 +72,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -93,9 +84,26 @@
               <item name="card_excel" type="462c0819:PsiDirectoryNode" />
               <item name="card_excel" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
             <path>
-              <item name="card_excel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="card_excel" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\git文件\Python_study\card_excel" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="card_excel" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\git文件\Python_study\card_excel" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="card_excel" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="E:\git文件\Python_study\card_excel" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="card_excel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -248,26 +256,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/card_excel/card_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        <state relative-caret-position="598">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/Python/Python38/Lib/site-packages/openpyxl/worksheet/worksheet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="15502">
           <caret line="723" column="8" selection-start-line="723" selection-start-column="8" selection-end-line="723" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/card_excel/card_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
-          <folding>
-            <element signature="e#67#249#0" />
-            <element signature="e#1519#1830#0" />
-          </folding>
+        <state relative-caret-position="222">
+          <caret line="131" column="30" lean-forward="true" selection-start-line="131" selection-start-column="30" selection-end-line="131" selection-end-column="30" />
         </state>
       </provider>
     </entry>

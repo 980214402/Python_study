@@ -89,11 +89,8 @@ def card_search():
             # 出来查询到的名片
             card_deal_find(card_find)
             break
-
     else:
         print('没有找到名片您想找的名片')
-
-    # 提示用户操作
 
 
 def card_deal_find(card_find):
@@ -111,10 +108,6 @@ def card_deal_find(card_find):
         print('已删除 %s 的名片' % card_find['name'])
 
 
-    pass
-
-
-
 def card_input_info(find_value, info):
     # 提示用户输入信息
     user_info = input(info)
@@ -125,7 +118,6 @@ def card_input_info(find_value, info):
     # 用户没有输入
     else:
         return find_value
-
 
 
 def card_excel_open(filename, sheet):
