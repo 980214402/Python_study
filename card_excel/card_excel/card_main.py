@@ -21,6 +21,8 @@ import card_tools
 def card(filename, sheet):
 
     card_tools.card_excel_open(filename, sheet)
+    # card_tools.card_excel_delete(filename, sheet, 1, max_row)
+    # 直接删除会导致文件中没有记录，如果用户不正常退出会丢失数据
     while True:
 
         card_tools.card_menu()
@@ -30,12 +32,14 @@ def card(filename, sheet):
         if user_use in ['1', '2', '3']:
             print("你选择的操作 {}".format(user_use))
             if user_use == '1':
-                card_tools.card_add(filename, sheet)
+                card_tools.card_add()
+                card_tools.card_excel_rewrite(filename, sheet, card_tools.card_list) # 修改card后，对文件进行删除重写
             elif user_use == '2':
-                card_tools.card_show(filename, sheet)
-                pass
+                card_tools.card_show()
+
             elif user_use == '3':
-                card_tools.card_search(filename, sheet)
+                card_tools.card_search()
+                card_tools.card_excel_rewrite(filename, sheet, card_tools.card_list)
         elif user_use == '0':
             print("你选择的操作是 {}".format(user_use))
             print('欢迎再次使用 【名片管理系统 Excel】')
